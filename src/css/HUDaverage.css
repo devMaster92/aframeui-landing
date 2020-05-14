@@ -1,0 +1,13 @@
+#envdiv{
+
+    border-right: 2px solid #344955;
+    height: 90%;
+    width: 45%;
+    top: -72.5%;
+    position: relative;
+    /* padding-top: 0%; */
+    margin-top: 0.3%;
+    margin-left: 1%;
+    text-align:center;
+
+}

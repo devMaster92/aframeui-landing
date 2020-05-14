@@ -1,0 +1,75 @@
+.promo-form {
+    width: 7.5vw;
+    text-align: left;
+}
+
+.radio-label {
+    display: block;
+    position: relative;
+    padding-left: 1.2vw;
+    margin-bottom: 0.5vw;
+    cursor: pointer;
+    font-size: 0.7vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio */
+.radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio */
+.radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.8vw;
+    width: 0.8vw;
+    background-color: #c1c1c1;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-label:hover input ~ .radiomark {
+    background-color: #ccc;
+}
+
+/* When the radio is checked, add a blue background */
+.radio-label input:checked ~ .radiomark {
+    background-color: #344955;
+}
+
+/* Create the radiomark/indicator (hidden when not checked) */
+.radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the radiomark when checked */
+.radio-label input:checked ~ .radiomark:after {
+    display: block;
+}
+
+/* Style the radiomark/indicator */
+.radio-label .radiomark:after {
+    left: 0.2vw;
+    top: 0.1vw;
+    width: 0.2vw;
+    height: 0.4vw;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+

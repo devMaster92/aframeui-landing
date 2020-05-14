@@ -1,0 +1,28 @@
+/* .windrose { grid-area: windrose; } */
+.eat {
+  grid-column: eat;
+}
+.sleep {
+  grid-column: sleep;
+}
+.drink {
+  grid-column: drink;
+}
+
+.ActivityControl {
+  display: grid;
+  grid-template-areas:
+    /* 'windrose windrose windrose windrose windrose windrose' */
+    "eat"
+    "sleep"
+    "drink";
+  grid-gap: 0.1%;
+  /* background-color: #2196F3; */
+  padding: 0.5%;
+}
+
+.ActivityControl > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1% 0;
+}

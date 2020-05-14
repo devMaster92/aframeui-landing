@@ -1,0 +1,11 @@
+#TabGraph {
+  font-size: 0.9vw !important;
+  min-height: 4vh !important;
+}
+
+#streamgraph {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 200px;
+}
